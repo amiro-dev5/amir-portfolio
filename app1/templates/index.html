@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My World Class Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome ለ Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white font-sans scroll-smooth">
+
+    <!-- 1. Navigation Bar -->
+    <nav id="navbar" class="fixed w-full z-[100] transition-all duration-500 bg-transparent py-5">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center relative">
+        <a href="#home" class="group flex items-center space-x-3">
+            <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-all duration-300 shadow-lg shadow-blue-500/20">
+                <span class="text-white font-black text-lg">A</span> 
+            </div>
+            <h1 class="text-xl font-black tracking-tighter">
+                <span class="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-500">Portfolio.</span>
+            </h1>
+        </a>
+
+        <div class="hidden md:flex items-center space-x-2">
+            <a href="#home" class="px-4 py-2 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 transition-all">Home</a>
+            <a href="#about" class="px-4 py-2 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 transition-all">About</a>
+            <a href="#skills" class="px-4 py-2 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 transition-all">Skills</a>
+            <a href="#projects" class="px-4 py-2 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 transition-all">Projects</a>
+            <a href="#certificates" class="px-4 py-2 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 transition-all">certificates</a>
+            <a href="#contact" class="ml-4 px-5 py-2 rounded-full text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white shadow-xl shadow-blue-600/20 transition-all active:scale-95 border border-blue-400/20">
+                Contact Me
+            </a>
+        </div>
+
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none relative w-10 h-10 flex items-center justify-center z-[110]">
+            <div id="hamburger" class="relative w-6 h-0.5 bg-white transition-all duration-300 before:content-[''] before:absolute before:w-6 before:h-0.5 before:bg-white before:-translate-y-2 before:left-0 before:transition-all after:content-[''] after:absolute after:w-6 after:h-0.5 after:bg-white after:translate-y-2 after:left-0 after:transition-all"></div>
+        </button>
+
+        <div id="mobile-menu" class="absolute top-20 left-6 right-6 bg-gray-900/95 backdrop-blur-xl border border-white/10 rounded-3xl p-8 flex flex-col items-center space-y-6 text-xl font-semibold opacity-0 -translate-y-10 pointer-events-none transition-all duration-500 shadow-2xl md:hidden">
+            <a href="#home" class="mobile-link w-full text-center py-2 hover:text-blue-500 transition-colors">Home</a>
+            <a href="#about" class="mobile-link w-full text-center py-2 hover:text-blue-500 transition-colors">About</a>
+            <a href="#skills" class="mobile-link w-full text-center py-2 hover:text-blue-500 transition-colors">Skills</a>
+            <a href="#projects" class="mobile-link w-full text-center py-2 hover:text-blue-500 transition-colors">Projects</a>
+            <a href="#certificates" class="mobile-link w-full text-center py-2 hover:text-blue-500 transition-colors">certificates</a>
+            <hr class="w-full border-white/5">
+            <a href="#contact" class="mobile-link w-full bg-blue-600 py-4 rounded-2xl text-white text-center text-lg shadow-lg shadow-blue-600/20">Contact Me</a>
+        </div>
+    </div>
+</nav>
+
+    <section id="home" class="relative min-h-[85vh] flex flex-col justify-center items-center text-center px-6 overflow-hidden">
+    
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-50"></div>
+        <div class="absolute inset-0 shadow-[inset_0_0_150px_rgba(0,0,0,0.8)]"></div>
+        
+        <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-600/10 rounded-full blur-[120px] animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-600/10 rounded-full blur-[120px] animate-pulse" style="animation-delay: 2s;"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl">
+        <span class="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-blue-400 uppercase bg-blue-400/10 border border-blue-400/20 rounded-full">
+            Available for New Projects
+        </span>
+        
+        <h2 class="text-6xl md:text-8xl font-black mb-6 tracking-tight">
+            I'm <span class="bg-gradient-to-r from-blue-400 via-white to-purple-500 bg-clip-text text-transparent">Amir Seid</span>
+        </h2>
+        
+        <p class="text-xl md:text-2xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+            I specialize in building <span class="text-white font-medium italic">intelligent web applications</span> 
+            that don't just function, but <span class="text-blue-500 underline decoration-blue-500/30 underline-offset-8">think</span> and solve complex problems.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+            {% if resume %}
+                <a href="{{ resume.file.url }}" target="_blank" 
+                   class="group relative px-8 py-4 bg-white text-gray-900 font-bold rounded-2xl transition-all duration-300 hover:scale-105 active:scale-95 shadow-xl shadow-white/10 overflow-hidden">
+                    <span class="relative z-10 flex items-center">
+                        View Resume <i class="fas fa-eye ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </a>
+
+                <a href="{{ resume.file.url }}" download 
+                   class="group px-8 py-4 bg-gray-800/50 backdrop-blur-md border border-white/10 text-white font-bold rounded-2xl transition-all duration-300 hover:bg-gray-700 hover:border-white/20 active:scale-95">
+                    <span class="flex items-center">
+                        Download CV <i class="fas fa-download ml-2 group-hover:translate-y-1 transition-transform"></i>
+                    </span>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="absolute bottom-10 animate-bounce text-gray-500">
+        <i class="fas fa-chevron-down text-xl"></i>
+    </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto overflow-hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        
+        <div class="relative order-2 lg:order-1 flex justify-center items-center">
+            <div class="absolute w-72 h-72 bg-blue-600/10 rounded-full blur-[100px] animate-pulse"></div>
+            
+            <div class="relative group w-64 h-64 md:w-80 md:h-80">
+                <div class="absolute -inset-1 bg-gradient-to-tr from-blue-600 via-purple-500 to-blue-400 rounded-full opacity-40 group-hover:opacity-80 transition duration-1000 animate-spin-slow"></div>
+                
+                <div class="relative w-full h-full bg-gray-900 rounded-full p-2 border border-white/5 shadow-2xl overflow-hidden">
+                    {% if profile %}
+                        <img src="{{ profile.image.url }}" alt="Amir Seid" 
+                             class="rounded-full w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 transform group-hover:scale-105">
+                    {% else %}
+                        <img src="https://via.placeholder.com/400x400" alt="Amir Seid" class="rounded-full w-full h-full object-cover">
+                    {% endif %}
+                </div>
+
+                <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gray-900 border border-white/10 py-2 px-6 rounded-full shadow-2xl backdrop-blur-md">
+                    <p class="text-blue-400 font-mono text-[10px] tracking-[0.4em] uppercase font-bold text-center">Amir Seid</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="order-1 lg:order-2 space-y-8">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <span class="h-[1px] w-8 bg-blue-500"></span>
+                    <h3 class="text-blue-500 font-mono tracking-widest uppercase text-xs font-black">Discover my story</h3>
+                </div>
+                
+                <h2 class="text-5xl md:text-6xl font-black text-white leading-[1.1] tracking-tight">
+                    Engineering <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 italic">Intelligent</span> Logic.
+                </h2>
+            </div>
+            <div class="pt-2 flex items-center space-x-3 opacity-50 hover:opacity-100 transition-opacity">
+                        <i class="fas fa-terminal text-blue-500 text-xs"></i>
+                        <span class="text-xs text-gray-500 font-mono tracking-tighter">A little bit about myself</span>
+                    </div>
+            <div class="relative group">
+                <span class="absolute -top-6 -left-4 text-7xl text-white/5 font-serif select-none group-hover:text-blue-500/10 transition-colors">“</span>
+                
+                <div class="pl-2 space-y-6">
+                    <p class="text-gray-300 text-lg md:text-xl leading-relaxed font-light first-letter:text-5xl first-letter:font-black first-letter:text-blue-500 first-letter:mr-3 first-letter:float-left">
+                        {% if profile %}
+                            {{ profile.bio_text|linebreaks }}
+                        {% else %}
+                            Your story begins here... Please update your bio in the admin panel.
+                        {% endif %}
+                    </p>
+                    
+    
+                </div>
+            </div>
+
+            <div class="pt-6">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white/5 border border-white/5 rounded-full">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    <span class="text-[10px] text-gray-400 font-medium uppercase tracking-widest">Available for remote work</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <style>
+    @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+        animation: spin-slow 12s linear infinite;
+    }
+    </style>
+    <section id="skills" class="py-24 bg-gray-900/50 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-[120px]"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-20">
+            <h3 class="text-blue-500 font-mono tracking-[0.4em] uppercase text-xs font-black mb-4">My Expertise</h3>
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-6">The <span class="italic text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Tech Stack</span> I Master</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg font-light">
+                From database management to developing intelligent models; these are my primary tools for solving complex challenges.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {% for category, skills in skills_by_category.items %}
+            {% if skills %}
+            <div class="group p-8 bg-gray-800/30 backdrop-blur-md border border-white/5 rounded-3xl hover:border-blue-500/30 transition-all duration-500 hover:-translate-y-2 shadow-2xl">
+                <div class="flex items-center justify-between mb-8">
+                    <h4 class="text-xl font-bold text-white tracking-tight">{{ category }}</h4>
+                    <div class="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-500 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-layer-group text-sm"></i>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3">
+                    {% for skill in skills %}
+                    <div class="flex items-center space-x-2 px-4 py-2.5 bg-gray-900/50 border border-white/5 rounded-xl hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:border-transparent transition-all duration-300 group/item cursor-default shadow-lg">
+                        <i class="{{ skill.icon_class }} text-blue-500 group-hover/item:text-white transition-colors"></i>
+                        <span class="text-gray-300 group-hover/item:text-white font-medium text-sm">{{ skill.name }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    </section>
+    <section id="projects" class="py-28 relative overflow-hidden bg-gray-900">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-900/10 rounded-full blur-[150px] -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20 space-y-4">
+            <h3 class="text-blue-500 font-mono tracking-[0.5em] uppercase text-xs font-black">My Portfolio</h3>
+            <h2 class="text-5xl md:text-6xl font-black text-white italic">Featured <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600">Masterpieces</span></h2>
+            <div class="h-1.5 w-24 bg-gradient-to-r from-blue-600 to-transparent mx-auto rounded-full mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {% for project in projects %}
+            <div class="group relative bg-gray-800/40 backdrop-blur-sm rounded-[2.5rem] p-4 border border-white/5 hover:border-blue-500/50 transition-all duration-500 hover:-translate-y-3 shadow-2xl shadow-black/50">
+                
+                <div class="relative h-64 w-full rounded-[2rem] overflow-hidden mb-6 shadow-inner">
+                    <img src="{{ project.image.url }}" alt="{{ project.title }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-transparent to-transparent opacity-60"></div>
+                    
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-blue-600/80 backdrop-blur-md text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-tighter">
+                            Active Project
+                        </span>
+                    </div>
+                </div>
+
+                <div class="px-4 pb-4 space-y-6">
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span class="text-blue-400 font-mono text-[10px] uppercase font-bold tracking-widest">Project Title</span>
+                        </div>
+                        <h4 class="text-2xl font-black text-white group-hover:text-blue-400 transition-colors tracking-tight">{{ project.title }}</h4>
+                    </div>
+
+                    <div class="space-y-3">
+                        <p class="text-xs text-gray-500 font-bold uppercase tracking-tighter">Tech Stack used:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-lg text-blue-400 text-[11px] font-bold">
+                                <i class="fas fa-microchip mr-2"></i> {{ project.tech_used }}
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <p id="desc-{{ forloop.counter }}" class="text-gray-400 text-sm leading-relaxed line-clamp-3 transition-all duration-500">
+                            {{ project.description }}
+                        </p>
+                        
+                        <button onclick="toggleDescription('{{ forloop.counter }}')" 
+                                id="btn-{{ forloop.counter }}"
+                                class="mt-3 text-blue-400 text-xs font-black flex items-center group/btn hover:text-blue-300 transition-all uppercase tracking-widest">
+                            <span id="text-{{ forloop.counter }}">View Full Story</span>
+                            <i id="icon-{{ forloop.counter }}" class="fas fa-chevron-down ml-2 transform transition-transform duration-300 group-hover/btn:translate-y-0.5"></i>
+                        </button>
+                    </div>
+
+                    <div class="pt-4 grid grid-cols-2 gap-4">
+                        {% if project.github_link %}
+                        <a href="{{ project.github_link }}" target="_blank" class="flex items-center justify-center space-x-2 py-3 bg-gray-900 border border-white/10 rounded-2xl text-[10px] font-black hover:bg-white hover:text-black transition-all duration-300">
+                            <i class="fab fa-github text-sm"></i>
+                            <span>GITHUB</span>
+                        </a>
+                        {% endif %}
+                        
+                        {% if project.live_link %}
+                        <a href="{{ project.live_link }}" target="_blank" class="flex items-center justify-center space-x-2 py-3 bg-blue-600 rounded-2xl text-[10px] font-black text-white hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-600/40 transition-all duration-300">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>LIVE DEMO</span>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<script>
+function toggleDescription(id) {
+    const desc = document.getElementById(`desc-${id}`);
+    const btnText = document.getElementById(`text-${id}`);
+    const btnIcon = document.getElementById(`icon-${id}`);
+
+    if (desc.classList.contains('line-clamp-3')) {
+        // Expand
+        desc.classList.remove('line-clamp-3');
+        btnText.innerText = 'Show Less';
+        btnIcon.classList.add('rotate-180');
+    } else {
+        // Collapse
+        desc.classList.add('line-clamp-3');
+        btnText.innerText = 'View Full Story';
+        btnIcon.classList.remove('rotate-180');
+    }
+}
+</script>
+    <section id="certificates" class="py-28 bg-gray-900 relative">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20 space-y-4">
+            <h3 class="text-purple-500 font-mono tracking-[0.5em] uppercase text-xs font-black">My Credentials</h3>
+            <h2 class="text-5xl md:text-6xl font-black text-white italic">Verified <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">Achievements</span></h2>
+            <div class="h-1.5 w-24 bg-gradient-to-r from-purple-600 to-transparent mx-auto rounded-full mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {% for cert in certificates %}
+            <div class="group relative bg-gray-800/40 backdrop-blur-md rounded-[2rem] p-5 border border-white/5 hover:border-purple-500/50 transition-all duration-500 shadow-2xl">
+                
+                <div class="relative h-56 w-full rounded-[1.5rem] overflow-hidden mb-6 cursor-pointer" 
+                     onclick="openCertificate('{{ cert.image.url }}', '{{ cert.title }}')">
+                    <img src="{{ cert.image.url }}" alt="{{ cert.title }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    
+                    <div class="absolute inset-0 bg-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-2xl scale-50 group-hover:scale-100 transition-transform duration-500">
+                            <i class="fas fa-search-plus text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-3 px-2">
+                    <div class="flex items-center space-x-2">
+                        <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-[10px] font-black rounded-full uppercase tracking-widest border border-purple-500/20">
+                            {{ cert.issued_by }}
+                        </span>
+                    </div>
+                    <h4 class="text-xl font-bold text-white tracking-tight group-hover:text-purple-400 transition-colors">{{ cert.title }}</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed line-clamp-2 italic">{{ cert.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div id="cert-modal" class="fixed inset-0 z-[200] hidden bg-gray-950/95 backdrop-blur-2xl flex items-center justify-center p-4 md:p-10 transition-all duration-500 opacity-0">
+        <button onclick="closeCertificate()" class="absolute top-6 right-6 md:top-10 md:right-10 w-12 h-12 bg-white/10 hover:bg-red-500/20 border border-white/10 rounded-full flex items-center justify-center text-white transition-all active:scale-90 group">
+            <i class="fas fa-times text-xl group-hover:rotate-90 transition-transform"></i>
+        </button>
+        
+        <div class="max-w-5xl w-full flex flex-col items-center space-y-6">
+            <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_0_100px_rgba(139,92,246,0.2)] border border-white/10">
+                <img id="modal-img" src="" alt="Full View" class="w-full h-auto max-h-[80vh] object-contain">
+            </div>
+            <h3 id="modal-title" class="text-2xl md:text-3xl font-black text-white tracking-tight"></h3>
+        </div>
+    </div>
+</section>
+
+<script>
+function openCertificate(imgSrc, title) {
+    const modal = document.getElementById('cert-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+
+    modalImg.src = imgSrc;
+    modalTitle.innerText = title;
+    
+    modal.classList.remove('hidden');
+
+    setTimeout(() => {
+        modal.classList.add('opacity-100');
+        modal.querySelector('div').classList.add('scale-100');
+    }, 10);
+    
+    document.body.style.overflow = 'hidden'; // ገጹ እንዳይሽከረከር
+}
+
+function closeCertificate() {
+    const modal = document.getElementById('cert-modal');
+    modal.classList.remove('opacity-100');
+    
+    setTimeout(() => {
+        modal.classList.add('hidden');
+    }, 500);
+    
+    document.body.style.overflow = 'auto'; 
+}
+
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeCertificate();
+});
+</script>
+{% if messages %}
+<div id="message-container" class="fixed top-24 left-1/2 -translate-x-1/2 z-[300] w-[90%] max-w-md">
+    {% for message in messages %}
+    <div class="relative overflow-hidden flex items-center justify-between p-5 rounded-2xl backdrop-blur-xl shadow-2xl border 
+        {% if message.tags == 'success' %}
+            bg-green-500/20 border-green-500/30 text-green-400
+        {% else %}
+            bg-red-500/20 border-red-500/30 text-red-400
+        {% endif %} animate-in fade-in zoom-in duration-300">
+        
+        <div class="flex items-center space-x-3">
+            <i class="fas {% if message.tags == 'success' %}fa-check-circle{% else %}fa-exclamation-triangle{% endif %} text-xl"></i>
+            <span class="font-black text-sm uppercase tracking-wider">{{ message }}</span>
+        </div>
+
+        <button onclick="closeMessage()" class="ml-4 hover:scale-125 transition-transform">
+            <i class="fas fa-times opacity-50 hover:opacity-100"></i>
+        </button>
+
+        <div class="absolute bottom-0 left-0 h-1 bg-current opacity-20 animate-progress"></div>
+    </div>
+    {% endfor %}
+</div>
+
+<style>
+    @keyframes progress {
+        from { width: 100%; }
+        to { width: 0%; }
+    }
+    .animate-progress {
+        animation: progress 5000ms linear forwards;
+    }
+</style>
+
+<script>
+   
+    function closeMessage() {
+        const container = document.getElementById('message-container');
+        container.style.transition = 'all 0.5s ease';
+        container.style.opacity = '0';
+        container.style.transform = 'translate(-50%, -20px)';
+        setTimeout(() => container.remove(), 500);
+    }
+
+  
+    setTimeout(() => {
+        if(document.getElementById('message-container')) {
+            closeMessage();
+        }
+    }, 5000);
+</script>
+{% endif %}
+    <section id="contact" class="py-28 relative overflow-hidden bg-[#0a0a0a]">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] animate-pulse"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] animate-pulse delay-1000"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            <div class="space-y-10">
+                <div class="space-y-4">
+                    <h3 class="text-blue-500 font-mono tracking-[0.4em] uppercase text-xs font-black">Get in touch</h3>
+                    <h2 class="text-5xl md:text-6xl font-black text-white leading-tight">
+                        Let’s Build Something <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 italic">Extraordinary.</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg font-light max-w-md">
+                        Have a groundbreaking idea or a complex problem to solve? I'm ready.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-6 group">
+                        <div class="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase font-black tracking-widest">Email Me</p>
+                            <p class="text-white font-bold text-lg">amirseid773@gmail.com</p> </div>
+                    </div>
+
+                    <div class="flex items-center space-x-6 group">
+                        <div class="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-purple-500 group-hover:bg-purple-600 group-hover:text-white transition-all duration-500">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase font-black tracking-widest">Location</p>
+                            <p class="text-white font-bold text-lg">Jimma, Ethiopia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-[2.5rem] blur opacity-20"></div>
+                <form action="{% url 'home' %}" method="POST" class="relative bg-gray-900 border border-white/10 p-8 md:p-10 rounded-[2.5rem] space-y-6 shadow-2xl">
+                    {% csrf_token %}
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase font-black text-gray-500 tracking-[0.2em] ml-2">Full Name</label>
+                            <input type="text" name="name" required placeholder="John Doe" 
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-blue-500 transition-all placeholder:text-gray-700">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase font-black text-gray-500 tracking-[0.2em] ml-2">Email Address</label>
+                            <input type="email" name="email" required placeholder="john@example.com" 
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-blue-500 transition-all placeholder:text-gray-700">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[10px] uppercase font-black text-gray-500 tracking-[0.2em] ml-2">Your Message</label>
+                        <textarea name="message" required rows="4" placeholder="Tell me about your project..." 
+                                  class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-blue-500 transition-all placeholder:text-gray-700 resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full group relative overflow-hidden bg-blue-600 py-5 rounded-2xl font-black text-white tracking-[0.2em] uppercase text-xs transition-all hover:bg-blue-500 active:scale-[0.98]">
+                        <span class="relative z-10 flex items-center justify-center">
+                            Send Message <i class="fas fa-paper-plane ml-3 group-hover:translate-x-2 group-hover:-translate-y-1 transition-transform"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <footer class="relative bg-[#050505] pt-24 pb-12 overflow-hidden border-t border-white/5">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-30"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+            
+            <div class="space-y-8">
+                <h2 class="text-2xl font-black text-white tracking-tighter">
+                    AMIR<span class="text-blue-500">.</span>DEV
+                </h2>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Building the future with Python, Django, and AI. <br>
+                    Focused on creating systems that solve real-world problems.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://github.com/amiro-dev5" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-all duration-500">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://t.me/a_miro_6" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-[#26A5E4] hover:text-white transition-all duration-500">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amir-seid-321133404?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-[#0077B5] hover:text-white transition-all duration-500">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/amurraw?igsh=MWVqdnV2cGE4bnVmdw==" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] hover:text-white transition-all duration-500">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <h4 class="text-white font-bold text-sm uppercase tracking-[0.2em]">Navigation</h4>
+                <ul class="space-y-4">
+                    <li><a href="#home" class="text-gray-500 hover:text-blue-400 text-sm transition-colors flex items-center group"><span class="w-0 group-hover:w-4 h-[1px] bg-blue-500 mr-0 group-hover:mr-2 transition-all"></span>Home</a></li>
+                    <li><a href="#about" class="text-gray-500 hover:text-blue-400 text-sm transition-colors flex items-center group"><span class="w-0 group-hover:w-4 h-[1px] bg-blue-500 mr-0 group-hover:mr-2 transition-all"></span>About</a></li>
+                    <li><a href="#skills" class="text-gray-500 hover:text-blue-400 text-sm transition-colors flex items-center group"><span class="w-0 group-hover:w-4 h-[1px] bg-blue-500 mr-0 group-hover:mr-2 transition-all"></span>Skills</a></li>
+                    <li><a href="#projects" class="text-gray-500 hover:text-blue-400 text-sm transition-colors flex items-center group"><span class="w-0 group-hover:w-4 h-[1px] bg-blue-500 mr-0 group-hover:mr-2 transition-all"></span>Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h4 class="text-white font-bold text-sm uppercase tracking-[0.2em]">Contact Me</h4>
+                <ul class="space-y-4">
+                    <li class="flex flex-col space-y-2">
+                        <div class="flex items-center space-x-3 group">
+                            <i class="fas fa-phone-alt text-blue-500 text-xs"></i>
+                            <a href="tel:+251939313417" class="text-gray-500 group-hover:text-white transition-colors text-sm">+251 939 313 417</a>
+                        </div>
+                        <div class="flex items-center space-x-3 group ml-6 italic">
+                            <a href="tel:+251708313417" class="text-gray-600 group-hover:text-white transition-colors text-xs">+251 708 313 417 (Alt)</a>
+                        </div>
+                    </li>
+                    <li class="flex items-center space-x-3 group">
+                        <i class="fas fa-map-marker-alt text-blue-500 text-xs"></i>
+                        <span class="text-gray-500 group-hover:text-white transition-colors text-sm">Harar, Ethiopia</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col items-center justify-center space-y-4 border-l border-white/5 hidden lg:flex">
+                <a href="#home" class="w-16 h-16 rounded-3xl bg-blue-600 flex items-center justify-center text-white shadow-2xl shadow-blue-600/40 hover:-translate-y-2 transition-all duration-500 group">
+                    <i class="fas fa-arrow-up group-hover:animate-bounce"></i>
+                </a>
+                <span class="text-[10px] font-black text-gray-500 uppercase tracking-widest">To Top</span>
+            </div>
+
+        </div>
+        <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <div class="flex items-center space-x-6">
+        {% if user.is_authenticated and user.is_staff %}
+        <a href="{% url 'admin:index' %}" target="_blank" class="flex items-center space-x-2 text-[10px] font-black tracking-widest uppercase text-blue-500 hover:text-white transition-colors group">
+            <i class="fas fa-user-shield group-hover:rotate-12 transition-transform"></i>
+            <span>Admin Control</span>
+        </a>
+        {% endif %}
+
+    </div>
+</div>
+        <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p class="text-gray-600 text-[10px] font-black tracking-widest uppercase">
+                &copy; 2024 AMIR SEID.
+            </p>
+            <p class="text-gray-600 text-[10px] font-black tracking-widest uppercase flex items-center">
+                Built with <i class="fas fa-heart mx-2 text-red-500 animate-pulse"></i> by 
+                <span class="text-white ml-2">Amir</span> 
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    // 1. Improved Toggle (Pop-up Style)
+    menuBtn.addEventListener('click', () => {
+        // Toggle Menu Visibility
+        mobileMenu.classList.toggle('opacity-0');
+        mobileMenu.classList.toggle('-translate-y-10');
+        mobileMenu.classList.toggle('pointer-events-none');
+        
+        // Hamburger Animation (Perfectly Centered)
+        hamburger.classList.toggle('bg-transparent');
+        hamburger.classList.toggle('before:rotate-45');
+        hamburger.classList.toggle('before:translate-y-0');
+        hamburger.classList.toggle('after:-rotate-45');
+        hamburger.classList.toggle('after:translate-y-0');
+    });
+
+    // 2. Close when link clicked
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('opacity-0', '-translate-y-10', 'pointer-events-none');
+            hamburger.classList.remove('bg-transparent', 'before:rotate-45', 'before:translate-y-0', 'after:-rotate-45', 'after:translate-y-0');
+        });
+    });
+
+    // 3. World-Class Scroll Effect
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 30) {
+            navbar.classList.add('bg-gray-900/80', 'backdrop-blur-md', 'py-3', 'border-b', 'border-white/5', 'shadow-2xl');
+            navbar.classList.remove('bg-transparent', 'py-5');
+        } else {
+            navbar.classList.remove('bg-gray-900/80', 'backdrop-blur-md', 'py-3', 'border-b', 'border-white/5', 'shadow-2xl');
+            navbar.classList.add('bg-transparent', 'py-5');
+        }
+    });
+</script>
+</body>
+</html>
