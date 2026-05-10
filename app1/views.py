@@ -22,7 +22,7 @@ def home(request):
             )
             messages.success(request, "Your message has been sent successfully!")
         except Exception as e:
-            messages.error(request, f"Something went wrong. Please try again.")
+            messages.error(request, f"Error: {e}")
         
         return redirect('/#contact') # 
    
