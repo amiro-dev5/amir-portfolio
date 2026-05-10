@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Project, Resume, Skill,Profile,Certificate
+from .models import Project, Resume, Skill,Profile,Certificate,ContactMessage
 from django.core.mail import send_mail
 from django.contrib import messages
 from django.shortcuts import redirect
@@ -9,22 +9,19 @@ def home(request):
         email = request.POST.get('email')
         message = request.POST.get('message')
 
-        subject = f"New Portfolio Message from {name}"
-        full_message = f"Sender Name: {name}\nSender Email: {email}\n\nMessage:\n{message}"
-        
         try:
-            send_mail(
-                subject,
-                full_message,
-                'crpor1487@gmail.com', 
-                ['crpor1487@gmail.com'], 
-                fail_silently=False,
+           
+            ContactMessage.objects.create(
+                name=name,
+                email=email,
+                message=message
             )
-            messages.success(request, "Your message has been sent successfully!")
-        except Exception as e:
-            messages.error(request, f"Error: {e}")
+            messages.success(request, "Thank you! Your message has been received successfully.")
+        except Exception:
+            
+            messages.error(request, "We encountered an issue saving your message. Please try again later.")
         
-        return redirect('/#contact') # 
+        return redirect('/#contact')
    
     projects = Project.objects.all().order_by('-created_at')
     all_skills = Skill.objects.all()
