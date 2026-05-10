@@ -140,7 +140,7 @@ EMAIL_PORT = 465
 EMAIL_USE_TLS = False         
 EMAIL_USE_SSL = True
 EMAIL_HOST_USER ='crpor1487@gmail.com'
-EMAIL_HOST_PASSWORD = 'ohfhzhdhnnhqolqt'
+EMAIL_HOST_PASSWORD = 'ohfh zhdh nnhq olqt'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_TIMEOUT = 30
