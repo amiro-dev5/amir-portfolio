@@ -135,12 +135,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Email Configuration
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 2525
+EMAIL_HOST = 'smtp-relay.brevo.com'
+EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
-EMAIL_HOST_USER ='crpor1487@gmail.com'
-EMAIL_HOST_PASSWORD = 'ohfhzhdhnnhqolqt'
+EMAIL_HOST_USER ='aad392001@smtp-brevo.com'
+EMAIL_HOST_PASSWORD = 'xsmtpsib-ca66f056a5dacf865982c2e29fb1bd69b6b8ad3e15261d03650233dcfcd7c28e-d4yLFn0XuASfOdpn'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_TIMEOUT = 60
